@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zero-to-Cloud Java — The Finance Tracker</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="topbar">
+  <button id="menuBtn" aria-label="Open course navigation" aria-expanded="false">☰</button>
+  <div>
+    <div style="font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)">Zero-to-Cloud Java</div>
+    <div style="font-size:13px;font-weight:600">The Finance Tracker</div>
+  </div>
+</div>
+<div id="scrim"></div>
+
+<div id="app">
+  <aside id="sidebar">
+    <div class="brand">
+      <div class="brand-kicker">Zero-to-Cloud Java</div>
+      <div class="brand-title">The Finance Tracker</div>
+      <div class="brand-sub">Console app → Cloud-deployed API</div>
+    </div>
+    <div class="progress-wrap">
+      <div class="progress-label"><span id="progText">0 of 5 complete</span><span id="progPct">0%</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progFill"></div></div>
+    </div>
+    <nav class="nav" id="nav" aria-label="Course modules"></nav>
+    <div class="side-foot">
+      <button class="linkish" id="resetBtn">Reset all progress</button>
+      <div class="side-note">Progress is stored in this browser only.</div>
+    </div>
+  </aside>
+
+  <main id="main" tabindex="-1">
+    <div class="wrap" id="view"></div>
+  </main>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
